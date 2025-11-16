@@ -1,0 +1,28 @@
+1. alat yang diizinkan 
+- chatgpt
+- gemini 
+- github copilot
+- cloud
+- phind
+dll
+
+2. yang di catat :
+promt
+jawaban 
+situs yang di pakai
+
+3. logbook 
+wajib dokumen (.doc / pdf)
+struktur :
+tanggal dan waktu 
+ai yang digunakan 
+promt
+jawaban
+implementasi dan refleksi tim 
+
+
+web 
+html, css (bootstrap, tailwind), js (jquery,chart.js)
+
+single page app, multi page app
+
