@@ -4,17 +4,113 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="style.css">
-  <title>Landing Page Split Bill</title>
+  <title>Split Bill</title>
 </head>
 <body>
-  <div class="container">
+
+ 
+  <!-- HOME PAGE -->
+  <div class="container" id="homePage">
     <h1>Ngitung Tagihan Bareng<br>Tanpa Ribet Blass</h1>
-    <p>Kadang mbagi biaya bareng iso dadi ruwet<br> amarga en pesenan kudu diatur kanthi cetha.</p>
+    <p>Kadang mbagi biaya bareng iso dadi ruwet amarga pesenan kudu diatur kanthi cetha.</p>
 
     <div class="btn-group">
-      <button class="btn">Patungan</button>
-      <button class="btn">Splitbill</button>
+      <button id="patunganBtn" class="btn">Patungan</button>
+      <button id="splitbillBtn" class="btn">Splitbill</button>
     </div>
   </div>
+
+   <div class="body2"></div>
+  <!-- SPLITBILL PAGE -->
+  <section class="splitbill-section hide" id="splitbillPage">
+
+    
+
+    <div class="form-box">
+      <div class="title-section">
+        <h2>Sing Melu lan Sing Kalebu</h2>
+        <p>Lengkapi data sing melo lan rincian sing kalebu ing pesenan supaya proses pembagian tagihan luwih gampang lan jelas.</p>
+      </div>
+
+
+      <div class="input-row">
+        <div class="input-group">
+          <label>Konco</label>
+          <input id="koncoInput" class="main-input" type="number" placeholder="Jumlah konco sing melu">
+        </div>
+
+        <div class="input-group">
+          <label>Jumlah Pesenan</label>
+          <input id="pangananInput" class="main-input" type="number" placeholder="Jumlah pesenan">
+        </div>
+      </div>
+
+      <div id="dynamicFields"></div>
+
+      <div class="button-row">
+        <button id="generateBtn" class="btn-main">Tampilno</button>
+        <button id="calcBtn" class="btn-main dark">Itung</button>
+      </div>
+
+      <div class="form-group">
+        <label class="txtotal">Total</label>
+        <div class="fake-input neumorph-inset"><span id="finalTotal">Rp 0</span></div>
+      </div>
+
+<!-- DISKON & PAJAK OPSIONAL -->
+<div class="optional-box neumorph">
+
+  <h3 style="margin-bottom: 10px;">Diskon & Pajak (Opsional)</h3>
+
+  <div class="optional-row">
+
+    <!-- KOLOM DISKON -->
+    <div class="optional-col">
+      <button id="btnDiskon" class="mini-btn special">Tambah Diskon?</button>
+
+      <div id="diskonBox" class="hide optional-input neumorph-inset">
+        <label>Diskon (Rp)</label>
+        <input type="number" id="diskon" placeholder="Masukkan nominal diskon">
+      </div>
+    </div>
+
+    <!-- KOLOM PAJAK -->
+    <div class="optional-col">
+      <button id="btnPajak" class="mini-btn special">Tambah Pajak?</button>
+
+      <div id="pajakBox" class="hide optional-input neumorph-inset">
+        <label>Pajak (Rp)</label>
+        <input type="number" id="pajak" placeholder="Masukkan nominal pajak">
+      </div>
+    </div>
+
+  </div>
+
+</div>
+
+
+ 
+      <!-- STRUK + USER CARD -->
+      <div class="splitbill-system">
+        
+        <div class="struk-container neumorph">
+          <h3>Struk</h3>
+          <div id="strukList"></div>
+        </div>
+
+        <div class="card-container neumorph">
+          <h3>Users</h3>
+          <div id="userCards"></div>
+        </div>
+
+      </div>
+
+      <button class="btn-main back-btn">Back</button>
+
+    </div>
+  </section>
+  </div>
+
+  <script src="script.js"></script>
 </body>
 </html>
