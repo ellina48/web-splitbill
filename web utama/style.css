@@ -10,8 +10,8 @@ body {
 .title-section {
   display: flex;
   flex-direction: column;
-  align-items: center;  /* Horizontal center */
-  justify-content: center; /* Vertical kalau butuh */
+  align-items: center; 
+  justify-content: center; 
   text-align: center;
 }
 
@@ -50,13 +50,40 @@ body {
   margin-bottom: 25px; /* <— jarak rapi ke elemen berikutnya */
 }
 
+
+/*button back and riset*/
+.button-row-back {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.button-row-back .back-btn:hover {
+  background: white;
+}
+
+.button-row-back .btn-main.red {
+  background: #d0b48a;
+  color: white;
+}
+
+.button-row-back .btn-main.red:hover {
+  background: wheat
+  ;
+}
+
+
 /* HIDE CLASS */
-.hide { display: none !important; }
+.hide { 
+  display: none !important; 
+}
 
 /* ================= HOME PAGE ================= */
 #homePage {
   height: 100vh;
   display: flex;
+  background-color: #E6D8C3;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
@@ -66,12 +93,14 @@ body {
 h1 {
   font-size: 48px;
   font-weight: bold;
-  margin-bottom: 17px;;
+  margin-bottom: 17px;
+  color: #452829;
 }
 
 h2 {
   font-size: 32px;
   margin-top:0px;
+  color: #452829;
 }
 
 p {
@@ -79,6 +108,7 @@ p {
   margin-bottom: 8px;
   font-size: 16px;
   justify-content: center;
+  color: #452829;
 
 }
 
@@ -91,11 +121,16 @@ p {
   padding: 14px 30px;
   border-radius: 12px;
   border: none;
-  background: #e0e0e0;
-  box-shadow: 5px 5px 10px #bebebe,
+  background: #C2A68C;
+  box-shadow: 5px 5px 10px #C2A68C,
               -5px -5px 10px #ffffff;
   cursor: pointer;
   transition: 0.3s;
+}
+
+#patunganBtn,
+#splitbillBtn {
+  color: #452829;
 }
 
 .button-row {
@@ -111,6 +146,7 @@ p {
 /* Halaman splitbill */
 .splitbill-section {
   display: flex;
+  background: #E6D8C3;
   flex-direction: column; /* supaya konten di atas bawah */
   justify-content: center; /* center vertikal */
   align-items: center;    /* center horizontal */
@@ -156,12 +192,21 @@ p {
   border-radius: 10px;
   border: none;
   background: #e0e0e0;
-  box-shadow: inset 4px 4px 8px #bebebe,
+  box-shadow: inset 4px 4px 8px #C2A68C,
               inset -4px -4px 8px #ffffff;
 }
 
-.input-row { display: flex; gap: 25px; margin-bottom: 20px; }
-.input-group { display: flex; flex-direction: column; }
+.input-row { 
+  
+  display: flex; 
+  gap: 25px; 
+  margin-bottom: 20px; 
+}
+.input-group { display: flex; 
+  flex-direction: 
+  column; 
+  
+}
 
 /* FOOD INPUT ROW */
 .food-row {
@@ -374,21 +419,6 @@ p {
   align-items: center;
 }
 
-/* Tombol + di pojok kanan */
-.plus-toggle {
-  padding: 5px 10px;
-  font-weight: bold;
-  border-radius: 50%;
-  border: none;
-  background: #00d0ff;
-  color: white;
-  cursor: pointer;
-  font-size: 16px;
-  transition: 0.2s;
-}
-.plus-toggle:hover {
-  background: #0095cc;
-}
 
 /* Tombol itung di total patungan */
 .calc-patungan {
@@ -397,7 +427,7 @@ p {
   width: 100%;
   font-size: 18px;
   font-weight: bold;
-  background: #ff8c42;
+  background: #d0b48a;
   color: white;
   border-radius: 12px;
   border: none;
@@ -407,7 +437,7 @@ p {
   transition: 0.3s;
 }
 .calc-patungan:hover {
-  background: #ff7000;
+  background: #d0b48a;
   box-shadow: 2px 2px 5px #b5b5b5,
               -2px -2px 5px #ffffff;
 }
