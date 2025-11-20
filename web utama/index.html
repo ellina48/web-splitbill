@@ -8,7 +8,6 @@
 </head>
 <body>
 
- 
   <!-- HOME PAGE -->
   <div class="container" id="homePage">
     <h1>Ngitung Tagihan Bareng<br>Tanpa Ribet Blass</h1>
@@ -20,27 +19,22 @@
     </div>
   </div>
 
-   <div class="body2"></div>
   <!-- SPLITBILL PAGE -->
-  <section class="splitbill-section hide" id="splitbillPage">
-
-    
-
+  <section class="splitbill-section hide" id="splitbillPage" data-mode="">
     <div class="form-box">
       <div class="title-section">
         <h2>Sing Melu lan Sing Kalebu</h2>
         <p>Lengkapi data sing melo lan rincian sing kalebu ing pesenan supaya proses pembagian tagihan luwih gampang lan jelas.</p>
       </div>
 
-
       <div class="input-row">
         <div class="input-group">
-          <label>Konco</label>
+          <label></label>
           <input id="koncoInput" class="main-input" type="number" placeholder="Jumlah konco sing melu">
         </div>
 
         <div class="input-group">
-          <label>Jumlah Pesenan</label>
+          <label></label>
           <input id="pangananInput" class="main-input" type="number" placeholder="Jumlah pesenan">
         </div>
       </div>
@@ -57,59 +51,56 @@
         <div class="fake-input neumorph-inset"><span id="finalTotal">Rp 0</span></div>
       </div>
 
+      <!-- DISKON & PAJAK OPSIONAL -->
 <!-- DISKON & PAJAK OPSIONAL -->
 <div class="optional-box neumorph">
-
-  <h3 style="margin-bottom: 10px;">Diskon & Pajak (Opsional)</h3>
-
   <div class="optional-row">
-
-    <!-- KOLOM DISKON -->
+    <!-- Diskon -->
     <div class="optional-col">
-      <button id="btnDiskon" class="mini-btn special">Tambah Diskon?</button>
-
-      <div id="diskonBox" class="hide optional-input neumorph-inset">
-        <label>Diskon (Rp)</label>
-        <input type="number" id="diskon" placeholder="Masukkan nominal diskon">
+                    <button id="btnDiskon" class="mini-btn special">Tambah Diskon?</button>
+      <div class="optional-input neumorph-inset">
+        <label>Diskon (%)</label>
+        <input type="number" id="diskon" placeholder="Masukkan diskon (%)">
+        <button class="mini-btn special" id="applyDiskonBtn">Tambah</button>
       </div>
     </div>
 
-    <!-- KOLOM PAJAK -->
+    <!-- Pajak -->
     <div class="optional-col">
-      <button id="btnPajak" class="mini-btn special">Tambah Pajak?</button>
-
-      <div id="pajakBox" class="hide optional-input neumorph-inset">
-        <label>Pajak (Rp)</label>
-        <input type="number" id="pajak" placeholder="Masukkan nominal pajak">
-      </div>
-    </div>
-
+  <button id="btnPajak" class="mini-btn special">Tambah Pajak?</button>
+  <div class="optional-input neumorph-inset">
+    <label>Pajak (Rp)</label>
+    <input type="number" id="pajak" placeholder="Masukkan pajak (Rp)">
+    <button class="mini-btn special" id="applyPajakBtn">Tambah</button>
   </div>
+</div>
 
 </div>
 
 
- 
+
+
+
       <!-- STRUK + USER CARD -->
       <div class="splitbill-system">
-        
         <div class="struk-container neumorph">
           <h3>Struk</h3>
           <div id="strukList"></div>
         </div>
 
         <div class="card-container neumorph">
-          <h3>Users</h3>
+          <h3 id="userCardTitle">Users</h3>
           <div id="userCards"></div>
         </div>
-
       </div>
 
-      <button class="btn-main back-btn">Back</button>
+      <div class="button-row-back">
+        <button class="btn-main back-btn">Back</button>
+        <button id="resetBtn" class="btn-main red">Riset</button>
+      </div>
 
     </div>
   </section>
-  </div>
 
   <script src="script.js"></script>
 </body>
