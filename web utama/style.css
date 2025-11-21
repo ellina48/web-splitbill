@@ -1,4 +1,4 @@
-/* RESET */
+
 body {
   margin: 0;
   padding: 0;
@@ -15,7 +15,7 @@ body {
   text-align: center;
 }
 
-/*plus to*/
+
 .input-plus-row {
   display: flex;
   gap: 8px;
@@ -42,16 +42,16 @@ body {
 
 
 .title-section h2 {
-  margin-bottom: 8px;  /* <— teks jadi lebih dekat */
+  margin-bottom: 8px;  
 }
 
 .title-section p {
   margin-top: 0;
-  margin-bottom: 25px; /* <— jarak rapi ke elemen berikutnya */
+  margin-bottom: 25px; 
 }
 
 
-/*button back and riset*/
+
 .button-row-back {
   display: flex;
   justify-content: flex-end;
@@ -60,13 +60,20 @@ body {
 }
 
 .btn:hover,
-.btn:active,
-.btn-main:hover,
-.btn-main:active {
-  background: inherit !important;
-  color: inherit !important;
-  box-shadow: inherit !important;
+.btn-main:hover {
+  background: #d0b48a !important;
+  box-shadow: 5px 5px 10px #bebebe,
+              -5px -5px 10px #ffffff;
 }
+
+
+.btn:active,
+.btn-main:active {
+  background: #d0b48a !important; 
+  box-shadow: inset 4px 4px 8px #b1b1b1,
+              inset -4px -4px 8px #b1b1b1;
+}
+
 
 
 .button-row-back .btn-main.red {
@@ -79,12 +86,11 @@ body {
 }
 
 
-/* HIDE CLASS */
 .hide { 
   display: none !important; 
 }
 
-/* ================= HOME PAGE ================= */
+
 #homePage {
   height: 100vh;
   display: flex;
@@ -145,7 +151,7 @@ p {
 }
 
 .button-row {
-  margin-bottom: 25px; /* <— jarak sebelum Total */
+  margin-bottom: 25px; 
 }
 
 .btn:hover {
@@ -153,14 +159,14 @@ p {
               -2px -2px 4px #ffffff;
 }
 
-/* =============== SPLITBILL PAGE ================= */
-/* Halaman splitbill */
+
+
 .splitbill-section {
   display: flex;
   background: #E6D8C3;
-  flex-direction: column; /* supaya konten di atas bawah */
-  justify-content: center; /* center vertikal */
-  align-items: center;    /* center horizontal */
+  flex-direction: column; 
+  justify-content: center; 
+  align-items: center;    
   padding: 40px;
   min-height: 100vh;
   gap: 30px;
@@ -184,7 +190,7 @@ p {
 }
 
 
-/* INPUT UTAMA */
+
 .main-input {
   width: 100%;
   padding: 10px 15px;
@@ -196,9 +202,9 @@ p {
 }
 
 .input-row { 
-  width: 97%;
+  width: 824px;
   display: flex; 
-  gap: 20px; 
+  gap: 40px; 
   margin-bottom: 20px; 
 }
 .input-group { 
@@ -207,7 +213,6 @@ p {
   flex: 1;
 }
 
-/* FOOD INPUT ROW */
 .food-row {
   display: flex;
   gap: 10px;
@@ -226,7 +231,7 @@ p {
 .foodName { width: 230px; }
 .foodPrice, .foodQty, .foodSubtotal { width: 120px; }
 
-/* BUTTONS */
+
 .btn-main {
   padding: 12px 22px;
   border-radius: 12px;
@@ -245,7 +250,6 @@ p {
 
 .dark { background: #d0b48a; color: white; }
 
-/* STRUK + CARD */
 .splitbill-system {
   display: flex;
   gap: 30px;

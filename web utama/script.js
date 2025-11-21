@@ -77,7 +77,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   resetBtn?.addEventListener("click", resetData);
 
-  // ========== GENERATE ==========
+
   generateBtn?.addEventListener("click", () => {
     const foodCount = Number(pangananInput?.value) || 0;
     const userCount = Number(koncoInput?.value) || 0;
@@ -190,7 +190,6 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 
-  // ========== CALC ==========
   calcBtn?.addEventListener("click", () => {
     const rows = document.querySelectorAll(".food-row");
     for (let r of rows) {
